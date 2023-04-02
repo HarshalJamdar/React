@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./index.css'>
+    <title>Namaste React</title>
+</head>
+<body>
+    <div id="root"></div>                                                    <!-- this div is root -->
+
+        <!-- Hello World using HTML/JavaScript/React -->
+
+        <!-- <h1>Hello World From HTML!</h1> using html -->
+
+        <!-- <script>
+            const heading = document.createElement('h1');           //creating h1 element using js api
+            heading.innerHTML = 'Hello World From JavaScript!';     // put hello world inside heading tag
+            const root = document.getElementById('root');           // to insert heading inside root
+            root.appendChild(heading);                              //heading will go as a child inside this root
+        </script> -->
+
+        <!-- pulling react inside our project using CDM links (search CDN React) -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>               <!-- this is the link where react code is hosted -->         
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>        <!-- this is the link where react dom library is for DOM manipulation --> 
+        
+        <!-- <script>
+            // creating h1 tag using react
+            const heading = React.createElement('h1', {id: 'heading'}, 'Hello World From React!');    // creating element is core react, this api has 3 arguments 1st element to be created(h1), 2nd object to pass attributes to the element, 3rd data to be passed to element('Hello world!').
+            //react needs to have root where it can do DOM manipulation.
+            const root = ReactDOM.createRoot(document.getElementById('root'));           // creating root inside react, creating root to manipulate DOM is from ReactDom library
+            root.render(heading);                                                        // rendering heading inside root in react
+        </script> -->
+
+        <script src='./App.js'></script>                                                  <!-- writing above react code in seprate file-->
+    </body>
+</html>
